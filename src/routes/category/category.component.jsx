@@ -13,7 +13,7 @@ const Category = () => {
   const { category } = useParams();
   // const categoriesMap = useSelector(selectCategoriesReducer);
   const categoriesMap = useSelector(selectCategoriesMap);
-  console.log('categoriesMap: ', categoriesMap);
+  // console.log('categoriesMap: ', categoriesMap);
   const [products, setProducts] = useState(categoriesMap[category]);
 
   useEffect(() => {
